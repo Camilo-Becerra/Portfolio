@@ -12,14 +12,37 @@ body {
 }
 
 /* Override Bootstrap primary color */
-.text-primary { color: var(--primary-color) !important; }
-.bg-primary { background-color: var(--primary-color) !important; }
-.btn-primary { background-color: var(--primary-color); border-color: var(--primary-color); }
-.btn-primary:hover { background-color: #245e5f; border-color: #245e5f; }
-.border-primary { border-color: var(--primary-color) !important; }
-.bg-primary-subtle { background-color: #E6FFFA !important; }
+.text-primary { 
+    color: var(--primary-color) !important; 
+}
 
-/* Navbar blur effect (not available in Bootstrap) */
+.bg-primary { 
+    background-color: var(--primary-color) !important; 
+}
+
+.btn-primary { 
+    background-color: var(--primary-color); 
+    border-color: var(--primary-color); 
+}
+
+.btn-primary:hover { 
+    background-color: #245e5f; 
+    border-color: #245e5f; 
+}
+
+.border-primary { 
+    border-color: var(--primary-color) !important; 
+}
+
+.bg-primary-subtle { 
+    background-color: #E6FFFA !important; 
+}
+
+/* Navbar styling */
+.navbar {
+    backdrop-filter: blur(10px);
+}
+
 .navbar-brand {
     color: white !important;
     font-weight: 800;
@@ -30,9 +53,8 @@ body {
     font-weight: 500;
 }
 
-/* Nav link hover effect (not available in Bootstrap) */
 .nav-link:hover {
-    background-color: rgba(44, 122, 123, 0.1);
+    background-color: rgba(255, 255, 255, 0.2);
     border-radius: 20px;
     color: white !important;
 }
@@ -42,17 +64,35 @@ body {
     background: linear-gradient(135deg, var(--gradient-start) 0%, var(--gradient-mid) 50%, var(--gradient-end) 100%);
 }
 
-/* Project card colors */
+/* Project card colors - Force gradients to show even with Dark Reader */
 .project-purple {
-    background: linear-gradient(135deg, #D6BCFA 0%, #B794F4 100%);
+    background: linear-gradient(135deg, #D6BCFA 0%, #B794F4 100%) !important;
+    background-image: linear-gradient(135deg, #D6BCFA 0%, #B794F4 100%) !important;
+    border: 2px solid rgba(255, 255, 255, 0.3) !important;
 }
 
 .project-teal {
-    background: linear-gradient(135deg, #81E6D9 0%, #4FD1C5 100%);
+    background: linear-gradient(135deg, #81E6D9 0%, #4FD1C5 100%) !important;
+    background-image: linear-gradient(135deg, #81E6D9 0%, #4FD1C5 100%) !important;
+    border: 2px solid rgba(255, 255, 255, 0.3) !important;
 }
 
 .project-coral {
-    background: linear-gradient(135deg, #FEB2B2 0%, #FC8181 100%);
+    background: linear-gradient(135deg, #FEB2B2 0%, #FC8181 100%) !important;
+    background-image: linear-gradient(135deg, #FEB2B2 0%, #FC8181 100%) !important;
+    border: 2px solid rgba(255, 255, 255, 0.3) !important;
+}
+
+.project-blue {
+    background: linear-gradient(135deg, #90CDF4 0%, #63B3ED 100%) !important;
+    background-image: linear-gradient(135deg, #90CDF4 0%, #63B3ED 100%) !important;
+    border: 2px solid rgba(255, 255, 255, 0.3) !important;
+}
+
+.project-orange {
+    background: linear-gradient(135deg, #FBD38D 0%, #F6AD55 100%) !important;
+    background-image: linear-gradient(135deg, #FBD38D 0%, #F6AD55 100%) !important;
+    border: 2px solid rgba(255, 255, 255, 0.3) !important;
 }
 
 /* Smooth hover effects */
@@ -64,31 +104,7 @@ body {
     transform: translateY(-5px);
     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15) !important;
 }
-/* Project card colors */
-.project-purple {
-    background: linear-gradient(135deg, #D6BCFA 0%, #B794F4 100%);
-    border: 2px solid rgba(255, 255, 255, 0.3);
-}
 
-.project-teal {
-    background: linear-gradient(135deg, #81E6D9 0%, #4FD1C5 100%);
-    border: 2px solid rgba(255, 255, 255, 0.3);
-}
-
-.project-coral {
-    background: linear-gradient(135deg, #FEB2B2 0%, #FC8181 100%);
-    border: 2px solid rgba(255, 255, 255, 0.3);
-}
-
-.project-blue {
-    background: linear-gradient(135deg, #90CDF4 0%, #63B3ED 100%);
-    border: 2px solid rgba(255, 255, 255, 0.3);
-}
-
-.project-orange {
-    background: linear-gradient(135deg, #FBD38D 0%, #F6AD55 100%);
-    border: 2px solid rgba(255, 255, 255, 0.3);
-}
 /* Smooth scroll */
 html {
     scroll-behavior: smooth;
