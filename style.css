@@ -109,3 +109,15 @@ body {
 html {
     scroll-behavior: smooth;
 }
+/* Force all project card images to same size */
+#projects .card-img-top {
+    height: 200px;
+    object-fit: cover;
+    object-position: center top;
+    background-color: #f8f9fa;
+}
+
+/* For cards without images, add a placeholder area */
+#projects .card:not(:has(.card-img-top)) .card-body {
+    padding-top: 2rem;
+}
