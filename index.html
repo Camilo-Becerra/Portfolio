@@ -1,393 +1,290 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0 ">
-    <meta name="color-scheme" content="light">
+<!-- Projects Section -->
+<section id="projects" class="py-5">
+    <div class="container" style="max-width: 80%;">
+        <h2 class="display-4 fw-bold text-center text-primary mb-5">Projects</h2>
 
-    <title>Camilo Becerra - Software Developer</title>
-    
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
-    
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
-    <!-- Custom CSS (minimal!) -->
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+        <!-- ============================================== -->
+        <!-- PERSONAL PROJECTS -->
+        <!-- ============================================== -->
 
-    <!-- Navigation -->
-   <nav class="navbar navbar-expand-lg navbar-dark bg-primary bg-opacity-90 sticky-top shadow-sm mb-5">
-    <div class="container">
-        <a class="navbar-brand fw-bold fs-4 text-white" href="https://github.com/Camilo-Becerra">CB github</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item text-white"><a class="nav-link px-3 fw-semibold" href="#about">About</a></li>
-                <li class="nav-item text-white"><a class="nav-link px-3 fw-semibold" href="#skills">Skills</a></li>
-                <li class="nav-item text-white"><a class="nav-link px-3 fw-semibold" href="#projects">Projects</a></li>
-                <li class="nav-item text-white"><a class="nav-link px-3 fw-semibold" href="#education">Education</a></li>
-                <li class="nav-item text-white"><a class="nav-link px-3 fw-semibold" href="#contact">Contact</a></li>
-            </ul>
-        </div>
-    </div>
-</nav>
-
-                                                                                        <!-- Hero Section -->
-    <section id="home" class="hero-gradient min-vh-75 d-flex align-items-center">
-        <div class="container text-center">
-            <h1 class="display-4 fw-bold text-dark mb-3">
-                Hi! I'm Camilo.<br>
-                <span class="text-primary">A Software Development<br>Student.</span>
-            </h1>
-            <p class="lead fs-4 text-secondary mb-4">
-                I spent five years building furniture. Now I build software.<br class="d-none d-md-block">
-                Same approach: understand what people need, then make it work.
-            </p>
-        </div>
-    </section>
-
-                                                                                        <!-- About Section -->
-    <section id="about" class="py-5">
-        <div class="container">
-            <h2 class="display-4 fw-bold text-center text-primary mb-5">About Me</h2>
-            <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <p class="fs-5 text-secondary lh-lg">
-                        My background in operations taught me how to break down problems and understand what users actually need — now I'm applying that to building web and mobile apps using a range of languages and frameworks, with a growing interest in cloud computing.
-                    </p>
-                    <p class="fs-5 text-secondary lh-lg">
-                        Skilled at translating  requirements into clear solutions and collaborating across 
-                        technical and non-technical teams. 
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-                                                                                        <!-- Skills Section -->
-    <section id="skills" class="py-5 bg-light">
-        <div class="container">
-            <h2 class="display-4 fw-bold text-center text-primary mb-5">Technical Skills</h2>
-            <div class="row g-4">
-                <!-- Programming Languages -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="card h-100 shadow-sm border-0">
-                        <div class="card-body p-4">
-                            <div class="text-primary mb-3">
-                                <i class="fas fa-code fa-3x"></i>
+        <!-- Project 1: Furniture Quote System (Personal) - CAROUSEL LEFT -->
+        <div class="card border-0 shadow-lg mb-5">
+            <div class="row g-0">
+                <!-- Carousel Left -->
+                <div class="col-md-6">
+                    <!-- EDIT: Add your carousel images below. Each carousel needs a unique id (e.g., carousel-furniture) -->
+                    <div id="carousel-furniture" class="carousel slide h-100" data-bs-ride="carousel">
+                        <div class="carousel-inner h-100">
+                            <!-- EDIT: First image (add class "active" to the first item only) -->
+                            <div class="carousel-item active h-100">
+                                <img src="https://raw.githubusercontent.com/Camilo-Becerra/FurnitureShop/main/furniture1.png" class="d-block w-100 h-100 object-fit-cover" alt="Furniture System Screenshot 1">
                             </div>
-                            <h3 class="h5 fw-bold mb-3">Programming Languages</h3>
-                            <div class="d-flex flex-wrap gap-2">
-                                <span class="badge bg-primary-subtle text-primary px-3 py-2">C#</span>
-                                <span class="badge bg-primary-subtle text-primary px-3 py-2">Java</span>
-                                <span class="badge bg-primary-subtle text-primary px-3 py-2">JavaScript</span>
-                                <span class="badge bg-primary-subtle text-primary px-3 py-2">PHP</span>
-                                <span class="badge bg-primary-subtle text-primary px-3 py-2">HTML</span>
-                                <span class="badge bg-primary-subtle text-primary px-3 py-2">CSS</span>
+                            <!-- EDIT: Add more images as needed -->
+                            <div class="carousel-item h-100">
+                                <img src="https://raw.githubusercontent.com/Camilo-Becerra/FurnitureShop/main/furniture2.png" class="d-block w-100 h-100 object-fit-cover" alt="Furniture System Screenshot 2">
+                            </div>
+                            <div class="carousel-item h-100">
+                                <img src="https://raw.githubusercontent.com/Camilo-Becerra/FurnitureShop/main/furniture3.png" class="d-block w-100 h-100 object-fit-cover" alt="Furniture System Screenshot 3">
                             </div>
                         </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carousel-furniture" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carousel-furniture" data-bs-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </button>
                     </div>
                 </div>
-                
-                <!-- Frameworks & Tools -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="card h-100 shadow-sm border-0">
-                        <div class="card-body p-4">
-                            <div class="text-primary mb-3">
-                                <i class="fas fa-layer-group fa-3x"></i>
-                            </div>
-                            <h3 class="h5 fw-bold mb-3">Frameworks & Tools</h3>
-                            <div class="d-flex flex-wrap gap-2">
-                                <span class="badge bg-primary-subtle text-primary px-3 py-2">React</span>
-                                <span class="badge bg-primary-subtle text-primary px-3 py-2">React Native</span>
-                                <span class="badge bg-primary-subtle text-primary px-3 py-2">ASP.NET Core</span>
-                                <span class="badge bg-primary-subtle text-primary px-3 py-2">Bootstrap</span>
-                                <span class="badge bg-primary-subtle text-primary px-3 py-2">Visual Studio</span>
-                                <span class="badge bg-primary-subtle text-primary px-3 py-2">VS Code</span>
-                                <span class="badge bg-primary-subtle text-primary px-3 py-2">IntelliJ</span>
-                            </div>
+                <!-- Description Right -->
+                <div class="col-md-6 d-flex align-items-center">
+                    <div class="card-body p-5">
+                        <small class="text-uppercase fw-bold text-warning">PERSONAL PROJECT</small>
+                        <h3 class="h3 fw-bold mt-2 mb-3">Wood Shop Customer Managing System</h3>
+                        <p class="card-text mb-4 fs-5">
+                            Customer management system for a custom furniture business. Features dynamic pricing calculator 
+                            with multi-variable inputs (wood, dimensions, stain, finish), work order tracking, and dashboard.
+                        </p>
+                        <p class="text-muted mb-4">
+                            <i class="fas fa-cloud me-2"></i>Deployed to Azure (App Service + SQL Database)
+                        </p>
+                        <div class="d-flex flex-wrap gap-2 mb-4">
+                            <span class="badge bg-primary text-white px-3 py-2">ASP.NET Core</span>
+                            <span class="badge bg-primary text-white px-3 py-2">C#</span>
+                            <span class="badge bg-primary text-white px-3 py-2">Entity Framework</span>
+                            <span class="badge bg-primary text-white px-3 py-2">Azure</span>
                         </div>
-                    </div>
-                </div>
-                
-                <!-- Database & Testing -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="card h-100 shadow-sm border-0">
-                        <div class="card-body p-4">
-                            <div class="text-primary mb-3">
-                                <i class="fas fa-database fa-3x"></i>
-                            </div>
-                            <h3 class="h5 fw-bold mb-3">Database & Testing</h3>
-                            <div class="d-flex flex-wrap gap-2">
-                                <span class="badge bg-primary-subtle text-primary px-3 py-2">SQL</span>
-                                <span class="badge bg-primary-subtle text-primary px-3 py-2">SQL Server</span>
-                                <span class="badge bg-primary-subtle text-primary px-3 py-2">JUnit</span>
-                                <span class="badge bg-primary-subtle text-primary px-3 py-2">Katalon</span>
-                                <span class="badge bg-primary-subtle text-primary px-3 py-2">GitHub</span>
-                                <span class="badge bg-primary-subtle text-primary px-3 py-2">Git</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-                                                                                    <!-- Projects Section -->
-    <section id="projects" class="py-5">
-        <div class="container">
-            <h2 class="display-4 fw-bold text-center text-primary mb-5">Projects</h2>
-            <div class="row g-4">
-                <!-- Project 1: Doctor Who Database -->
-                <div class="col-lg-4 col-md-6">
-                    <div class="card h-100 border-0 shadow project-purple">
-                        <img src="https://raw.githubusercontent.com/Camilo-Becerra/Dr-Who/main/drwho.png" class="card-img-top" alt="Doctor Who Database App Screenshot">
-                        <div class="card-body p-4">
-                            <small class="text-uppercase fw-bold text-muted">DATABASE APP</small>
-                            <h3 class="h4 fw-bold mt-2 mb-3">Doctor Who Database</h3>
-                            <p class="card-text mb-3">
-                                Windows Forms application connecting to SQL Server to manage relational data across 
-                                three interconnected tables with dynamic GUI controls.
-                            </p>
-                            <div class="d-flex flex-wrap gap-2 mb-3">
-                                <span class="badge bg-white text-dark px-3 py-2">C#</span>
-                                <span class="badge bg-white text-dark px-3 py-2">SQL Server</span>
-                                <span class="badge bg-white text-dark px-3 py-2">Windows Forms</span>
-                            </div>
-                            <a href="https://github.com/Camilo-Becerra/Dr-Who" target="_blank" class="btn btn-outline-dark btn-sm">
-                                <i class="fab fa-github me-1"></i> View Code
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Project 2: Dice Betting Game -->
-                <div class="col-lg-4 col-md-6">
-                    <div class="card h-100 border-0 shadow project-teal">
-                        <img src="https://raw.githubusercontent.com/Camilo-Becerra/diceGame/main/dice.png" class="card-img-top" alt="Dice Betting Game Screenshot">
-                        <div class="card-body p-4">
-                            <small class="text-uppercase fw-bold text-muted">WEB GAME</small>
-                            <h3 class="h4 fw-bold mt-2 mb-3">Dice Betting Game</h3>
-                            <p class="card-text mb-3">
-                                Interactive browser-based dice game with real-time SVG animation, dynamic DOM manipulation, 
-                                and event-driven user interactions.
-                            </p>
-                            <div class="d-flex flex-wrap gap-2 mb-3">
-                                <span class="badge bg-white text-dark px-3 py-2">JavaScript</span>
-                                <span class="badge bg-white text-dark px-3 py-2">HTML5</span>
-                                <span class="badge bg-white text-dark px-3 py-2">SVG</span>
-                            </div>
-                            <a href="https://github.com/Camilo-Becerra/diceGame" target="_blank" class="btn btn-outline-dark btn-sm">
-                                <i class="fab fa-github me-1"></i> View Code
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Project 3: Constellation Drawing -->
-                <div class="col-lg-4 col-md-6">
-                    <div class="card h-100 border-0 shadow project-coral">
-                        <img src="https://raw.githubusercontent.com/Camilo-Becerra/constellation/main/const1.png" class="card-img-top" alt="Constellation Drawing App Screenshot">
-                        <div class="card-body p-4">
-                            <small class="text-uppercase fw-bold text-muted">GRAPHICS APP</small>
-                            <h3 class="h4 fw-bold mt-2 mb-3">Constellation Drawing</h3>
-                            <p class="card-text mb-3">
-                                JavaFX application that creates custom star constellations with input validation and 
-                                dynamic graphics rendering using GraphicsContext API.
-                            </p>
-                            <div class="d-flex flex-wrap gap-2 mb-3">
-                                <span class="badge bg-white text-dark px-3 py-2">Java</span>
-                                <span class="badge bg-white text-dark px-3 py-2">JavaFX</span>
-                                <span class="badge bg-white text-dark px-3 py-2">Graphics API</span>
-                            </div>
-                            <a href="https://github.com/Camilo-Becerra/constellation" target="_blank" class="btn btn-outline-dark btn-sm">
-                                <i class="fab fa-github me-1"></i> View Code
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 4: Furniture Quote System (Personal) -->
-                <div class="col-lg-4 col-md-6">
-                    <div class="card h-100 border-0 shadow project-purple">
-                        <div class="card-img-top d-flex align-items-center justify-content-center bg-light" style="height: 200px;">
-                            <i class="fas fa-couch fa-4x text-muted"></i>
-                        </div>
-                        <div class="card-body p-4">
-                            <small class="text-uppercase fw-bold text-warning">PERSONAL PROJECT</small>
-                            <h3 class="h4 fw-bold mt-2 mb-3">Wood Shop Customer Managing System</h3>
-                            <p class="card-text mb-3">
-                                Customer management system for a custom furniture business. Features dynamic pricing calculator 
-                                with multi-variable inputs (wood, dimensions, stain, finish), work order tracking, and dashboard.
-                            </p>
-                            <div class="d-flex flex-wrap gap-2">
-                                <span class="badge bg-white text-dark px-3 py-2">ASP.NET Core</span>
-                                <span class="badge bg-white text-dark px-3 py-2">C#</span>
-                                <span class="badge bg-white text-dark px-3 py-2">Entity Framework</span>
-                                <span class="badge bg-white text-dark px-3 py-2">SQLite</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 5: Birds of Ontario -->
-                <div class="col-lg-4 col-md-6">
-                    <div class="card h-100 border-0 shadow project-teal">
-                        <img src="https://raw.githubusercontent.com/Camilo-Becerra/BirdsOfOntario/main/birds.png" class="card-img-top" alt="Doctor Who Database App Screenshot">
-
-                        <div class="card-body p-4">
-                            <small class="text-uppercase fw-bold text-muted">MOBILE APP</small>
-                            <h3 class="h4 fw-bold mt-2 mb-3">Birds of Ontario</h3>
-                            <p class="card-text mb-3">
-                                React Native mobile app that displays real bird sightings across Ontario using the iNaturalist API. 
-                                Features search, random discovery, and a catalog of the 50 most common species.
-                            </p>
-                            <div class="d-flex flex-wrap gap-2">
-                                <span class="badge bg-white text-dark px-3 py-2">React Native</span>
-                                <span class="badge bg-white text-dark px-3 py-2">Expo</span>
-                                <span class="badge bg-white text-dark px-3 py-2">REST API</span>
-                            </div>
-                            </div>
-                            <a href="https://github.com/Camilo-Becerra/BirdsOfOntario" target="_blank" class="btn btn-outline-dark btn-sm">
-                                <i class="fab fa-github me-1"></i> View Code
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 6: Card Deck Application -->
-                <div class="col-lg-4 col-md-6">
-                    <div class="card h-100 border-0 shadow project-coral">
-                        <div class="card-body p-4">
-                            <small class="text-uppercase fw-bold text-muted">WEB APP</small>
-                            <h3 class="h4 fw-bold mt-2 mb-3">Card Deck Application</h3>
-                            <p class="card-text mb-3">
-                                Interactive React app for manipulating a 52-card deck. Users can draw, deal, shuffle, 
-                                swap, and discard cards with state management handling deck and hand separately.
-                            </p>
-                            <div class="d-flex flex-wrap gap-2">
-                                <span class="badge bg-white text-dark px-3 py-2">React</span>
-                                <span class="badge bg-white text-dark px-3 py-2">JavaScript</span>
-                                <span class="badge bg-white text-dark px-3 py-2">State Management</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Education Section -->
-    <section id="education" class="py-5 bg-light">
-        <div class="container">
-            <h2 class="display-4 fw-bold text-center text-primary mb-5">Education</h2>
-            <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <!-- Education 1 -->
-                    <div class="card mb-4 border-0 border-start border-primary border-4 shadow-sm">
-                        <div class="card-body p-4">
-                            <div class="d-flex justify-content-between align-items-start flex-wrap mb-2">
-                                <h3 class="h5 fw-bold mb-2">Computer Systems Technology - Software Development</h3>
-                                <span class="badge bg-primary px-3 py-2">Dean's Honour Student</span>
-                            </div>
-                            <p class="text-primary fw-semibold mb-1">Mohawk College</p>
-                            <p class="text-muted mb-3">Hamilton, ON • Sept 2024 – Present</p>
-                            <p class="mb-0">
-                                <strong>Relevant Coursework:</strong> Web Application Development, Data Structures, 
-                                Software Quality and Testing, Project Management, UI/UX Design, Mobile Web Application, 
-                                Database Theory
-                            </p>
-                        </div>
-                    </div>
-                    
-                    <!-- Education 2 -->
-                    <div class="card border-0 border-start border-primary border-4 shadow-sm">
-                        <div class="card-body p-4">
-                            <h3 class="h5 fw-bold mb-2">Bachelor of Science in Biology</h3>
-                            <p class="text-primary fw-semibold mb-1">Concordia University</p>
-                            <p class="text-muted mb-0">Montreal, QC • Class of 2014</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="py-5">
-        <div class="container">
-            <h2 class="display-4 fw-bold text-center text-primary mb-5">Let's Connect</h2>
-            <div class="row justify-content-center">
-                <div class="col-lg-6">
-                    <div class="card border-0 shadow-sm mb-4">
-                        <div class="card-body p-4">
-                            <div class="d-flex align-items-center mb-3 pb-3 border-bottom">
-                                <i class="fas fa-envelope text-primary fa-lg me-3"></i>
-                                <a href="mailto:camilo.becerra-figueredo@mohawkcollege.ca" class="text-decoration-none text-dark">
-                                    camilo.becerra-figueredo@mohawkcollege.ca
-                                </a>
-                            </div>
-                            <div class="d-flex align-items-center mb-3 pb-3 border-bottom">
-                                <i class="fas fa-phone text-primary fa-lg me-3"></i>
-                                <a href="tel:5142935842" class="text-decoration-none text-dark">514.293.5842</a>
-                            </div>
-                            <div class="d-flex align-items-center mb-3 pb-3 border-bottom">
-                                <i class="fas fa-map-marker-alt text-primary fa-lg me-3"></i>
-                                <span>Hamilton, ON</span>
-                            </div>
-                            <div class="d-flex align-items-center mb-3 pb-3 border-bottom">
-                                <i class="fab fa-github text-primary fa-lg me-3"></i>
-                                <a href="https://github.com/Camilo-Becerra" class="text-decoration-none text-dark" target="_blank">
-                                    GitHub Profile
-                                </a>
-                            </div>
-                            <div class="d-flex align-items-center">
-                                <i class="fab fa-linkedin text-primary fa-lg me-3"></i>
-                                <a href="https://www.linkedin.com/in/camilo-becerra-41a361342/" class="text-decoration-none text-dark" target="_blank">
-                                    LinkedIn Profile
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="text-center">
-                        <a href="resume.pdf" class="btn btn-primary btn-lg px-5 py-3 rounded-pill shadow" download>
-                            <i class="fas fa-download me-2"></i> Download Resume
+                        <a href="https://github.com/Camilo-Becerra/FurnitureShop" target="_blank" class="btn btn-outline-primary">
+                            <i class="fab fa-github me-1"></i> View Code
                         </a>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
 
-    <!-- Footer -->
-    <footer class="bg-dark text-white-50 text-center py-4">
-        <div class="container">
-            <p class="mb-0">&copy; 2026 Camilo Becerra. Built with Bootstrap & passion.</p>
+        <!-- ============================================== -->
+        <!-- ACADEMIC PROJECTS -->
+        <!-- ============================================== -->
+
+        <!-- Project 2: Doctor Who Database - CAROUSEL RIGHT (alternating) -->
+        <div class="card border-0 shadow-lg mb-5">
+            <div class="row g-0 flex-md-row-reverse">
+                <!-- Carousel Right -->
+                <div class="col-md-6">
+                    <div id="carousel-drwho" class="carousel slide h-100" data-bs-ride="carousel">
+                        <div class="carousel-inner h-100">
+                            <!-- EDIT: Add your screenshot images here -->
+                            <div class="carousel-item active h-100">
+                                <img src="https://raw.githubusercontent.com/Camilo-Becerra/Dr-Who/main/drwho.png" class="d-block w-100 h-100 object-fit-cover" alt="Doctor Who Screenshot 1">
+                            </div>
+                            <!-- EDIT: Add more images if you have them -->
+                            <!--
+                            <div class="carousel-item h-100">
+                                <img src="https://raw.githubusercontent.com/Camilo-Becerra/Dr-Who/main/drwho2.png" class="d-block w-100 h-100 object-fit-cover" alt="Doctor Who Screenshot 2">
+                            </div>
+                            -->
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carousel-drwho" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carousel-drwho" data-bs-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </button>
+                    </div>
+                </div>
+                <!-- Description Left -->
+                <div class="col-md-6 d-flex align-items-center">
+                    <div class="card-body p-5">
+                        <small class="text-uppercase fw-bold text-muted">DATABASE APP</small>
+                        <h3 class="h3 fw-bold mt-2 mb-3">Doctor Who Database</h3>
+                        <p class="card-text mb-4 fs-5">
+                            Windows Forms application connecting to SQL Server to manage relational data across 
+                            three interconnected tables with dynamic GUI controls.
+                        </p>
+                        <div class="d-flex flex-wrap gap-2 mb-4">
+                            <span class="badge bg-primary text-white px-3 py-2">C#</span>
+                            <span class="badge bg-primary text-white px-3 py-2">SQL Server</span>
+                            <span class="badge bg-primary text-white px-3 py-2">Windows Forms</span>
+                        </div>
+                        <a href="https://github.com/Camilo-Becerra/Dr-Who" target="_blank" class="btn btn-outline-primary">
+                            <i class="fab fa-github me-1"></i> View Code
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
-    </footer>
 
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    
-    <!-- Smooth scroll -->
-    <script>
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
-    </script>
-</body>
-</html>
+        <!-- Project 3: Dice Betting Game - CAROUSEL LEFT -->
+        <div class="card border-0 shadow-lg mb-5">
+            <div class="row g-0">
+                <!-- Carousel Left -->
+                <div class="col-md-6">
+                    <div id="carousel-dice" class="carousel slide h-100" data-bs-ride="carousel">
+                        <div class="carousel-inner h-100">
+                            <div class="carousel-item active h-100">
+                                <img src="https://raw.githubusercontent.com/Camilo-Becerra/diceGame/main/dice.png" class="d-block w-100 h-100 object-fit-cover" alt="Dice Game Screenshot 1">
+                            </div>
+                            <!-- EDIT: Add more images if you have them -->
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carousel-dice" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carousel-dice" data-bs-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </button>
+                    </div>
+                </div>
+                <!-- Description Right -->
+                <div class="col-md-6 d-flex align-items-center">
+                    <div class="card-body p-5">
+                        <small class="text-uppercase fw-bold text-muted">WEB GAME</small>
+                        <h3 class="h3 fw-bold mt-2 mb-3">Dice Betting Game</h3>
+                        <p class="card-text mb-4 fs-5">
+                            Interactive browser-based dice game with real-time SVG animation, dynamic DOM manipulation, 
+                            and event-driven user interactions.
+                        </p>
+                        <div class="d-flex flex-wrap gap-2 mb-4">
+                            <span class="badge bg-primary text-white px-3 py-2">JavaScript</span>
+                            <span class="badge bg-primary text-white px-3 py-2">HTML5</span>
+                            <span class="badge bg-primary text-white px-3 py-2">SVG</span>
+                        </div>
+                        <a href="https://github.com/Camilo-Becerra/diceGame" target="_blank" class="btn btn-outline-primary">
+                            <i class="fab fa-github me-1"></i> View Code
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project 4: Constellation Drawing - CAROUSEL RIGHT -->
+        <div class="card border-0 shadow-lg mb-5">
+            <div class="row g-0 flex-md-row-reverse">
+                <!-- Carousel Right -->
+                <div class="col-md-6">
+                    <div id="carousel-constellation" class="carousel slide h-100" data-bs-ride="carousel">
+                        <div class="carousel-inner h-100">
+                            <div class="carousel-item active h-100">
+                                <img src="https://raw.githubusercontent.com/Camilo-Becerra/constellation/main/const1.png" class="d-block w-100 h-100 object-fit-cover" alt="Constellation Screenshot 1">
+                            </div>
+                            <!-- EDIT: You have const2.png - uncomment below to add it -->
+                            <div class="carousel-item h-100">
+                                <img src="https://raw.githubusercontent.com/Camilo-Becerra/constellation/main/const2.png" class="d-block w-100 h-100 object-fit-cover" alt="Constellation Screenshot 2">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carousel-constellation" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carousel-constellation" data-bs-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </button>
+                    </div>
+                </div>
+                <!-- Description Left -->
+                <div class="col-md-6 d-flex align-items-center">
+                    <div class="card-body p-5">
+                        <small class="text-uppercase fw-bold text-muted">GRAPHICS APP</small>
+                        <h3 class="h3 fw-bold mt-2 mb-3">Constellation Drawing</h3>
+                        <p class="card-text mb-4 fs-5">
+                            JavaFX application that creates custom star constellations with input validation and 
+                            dynamic graphics rendering using GraphicsContext API.
+                        </p>
+                        <div class="d-flex flex-wrap gap-2 mb-4">
+                            <span class="badge bg-primary text-white px-3 py-2">Java</span>
+                            <span class="badge bg-primary text-white px-3 py-2">JavaFX</span>
+                            <span class="badge bg-primary text-white px-3 py-2">Graphics API</span>
+                        </div>
+                        <a href="https://github.com/Camilo-Becerra/constellation" target="_blank" class="btn btn-outline-primary">
+                            <i class="fab fa-github me-1"></i> View Code
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project 5: Birds of Ontario - CAROUSEL LEFT -->
+        <div class="card border-0 shadow-lg mb-5">
+            <div class="row g-0">
+                <!-- Carousel Left -->
+                <div class="col-md-6">
+                    <div id="carousel-birds" class="carousel slide h-100" data-bs-ride="carousel">
+                        <div class="carousel-inner h-100">
+                            <!-- EDIT: Add your birds.png screenshot to the repo, then this will work -->
+                            <div class="carousel-item active h-100">
+                                <img src="https://raw.githubusercontent.com/Camilo-Becerra/BirdsOfOntario/main/birds.png" class="d-block w-100 h-100 object-fit-cover" alt="Birds of Ontario Screenshot 1">
+                            </div>
+                            <!-- EDIT: Add more screenshots if you have them (birds2.png, etc.) -->
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carousel-birds" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carousel-birds" data-bs-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </button>
+                    </div>
+                </div>
+                <!-- Description Right -->
+                <div class="col-md-6 d-flex align-items-center">
+                    <div class="card-body p-5">
+                        <small class="text-uppercase fw-bold text-muted">MOBILE APP</small>
+                        <h3 class="h3 fw-bold mt-2 mb-3">Birds of Ontario</h3>
+                        <p class="card-text mb-4 fs-5">
+                            React Native mobile app that displays real bird sightings across Ontario using the iNaturalist API. 
+                            Features search, random discovery, and a catalog of the 50 most common species.
+                        </p>
+                        <div class="d-flex flex-wrap gap-2 mb-4">
+                            <span class="badge bg-primary text-white px-3 py-2">React Native</span>
+                            <span class="badge bg-primary text-white px-3 py-2">Expo</span>
+                            <span class="badge bg-primary text-white px-3 py-2">REST API</span>
+                        </div>
+                        <a href="https://github.com/Camilo-Becerra/BirdsOfOntario" target="_blank" class="btn btn-outline-primary">
+                            <i class="fab fa-github me-1"></i> View Code
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project 6: Card Deck Application - CAROUSEL RIGHT -->
+        <div class="card border-0 shadow-lg mb-5">
+            <div class="row g-0 flex-md-row-reverse">
+                <!-- Carousel Right -->
+                <div class="col-md-6">
+                    <div id="carousel-cards" class="carousel slide h-100" data-bs-ride="carousel">
+                        <div class="carousel-inner h-100">
+                            <!-- EDIT: Add carddeck.png to your repo, then update the URL below -->
+                            <div class="carousel-item active h-100">
+                                <img src="https://raw.githubusercontent.com/Camilo-Becerra/CardDeck/main/carddeck.png" class="d-block w-100 h-100 object-fit-cover" alt="Card Deck Screenshot 1">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carousel-cards" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carousel-cards" data-bs-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </button>
+                    </div>
+                </div>
+                <!-- Description Left -->
+                <div class="col-md-6 d-flex align-items-center">
+                    <div class="card-body p-5">
+                        <small class="text-uppercase fw-bold text-muted">WEB APP</small>
+                        <h3 class="h3 fw-bold mt-2 mb-3">Card Deck Application</h3>
+                        <p class="card-text mb-4 fs-5">
+                            Interactive React app for manipulating a 52-card deck. Users can draw, deal, shuffle, 
+                            swap, and discard cards with state management handling deck and hand separately.
+                        </p>
+                        <div class="d-flex flex-wrap gap-2 mb-4">
+                            <span class="badge bg-primary text-white px-3 py-2">React</span>
+                            <span class="badge bg-primary text-white px-3 py-2">JavaScript</span>
+                            <span class="badge bg-primary text-white px-3 py-2">State Management</span>
+                        </div>
+                        <!-- EDIT: Add GitHub link once repo is created -->
+                        <a href="https://github.com/Camilo-Becerra/CardDeck" target="_blank" class="btn btn-outline-primary">
+                            <i class="fab fa-github me-1"></i> View Code
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
