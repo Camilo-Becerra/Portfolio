@@ -121,3 +121,22 @@ html {
 #projects .card:not(:has(.card-img-top)) .card-body {
     padding-top: 2rem;
 }
+/* Project carousel fixed height */
+#projects .carousel,
+#projects .carousel-inner,
+#projects .carousel-item {
+    min-height: 350px;
+}
+
+#projects .carousel-item img {
+    object-fit: cover;
+    object-position: center top;
+}
+
+/* Darken carousel arrows for visibility */
+#projects .carousel-control-prev-icon,
+#projects .carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    padding: 20px;
+}
