@@ -1,6 +1,7 @@
 /* Import Inter font */
 body {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-size: 14px;
 }
 
 /* Custom color scheme */
@@ -59,41 +60,8 @@ body {
     color: white !important;
 }
 
-/* Hero gradient background */
-.hero-gradient {
-    background: linear-gradient(135deg, var(--gradient-start) 0%, var(--gradient-mid) 50%, var(--gradient-end) 100%);
-}
 
-/* Project card colors - Force gradients to show even with Dark Reader */
-.project-purple {
-    background: linear-gradient(135deg, #D6BCFA 0%, #B794F4 100%) !important;
-    background-image: linear-gradient(135deg, #D6BCFA 0%, #B794F4 100%) !important;
-    border: 2px solid rgba(255, 255, 255, 0.3) !important;
-}
 
-.project-teal {
-    background: linear-gradient(135deg, #81E6D9 0%, #4FD1C5 100%) !important;
-    background-image: linear-gradient(135deg, #81E6D9 0%, #4FD1C5 100%) !important;
-    border: 2px solid rgba(255, 255, 255, 0.3) !important;
-}
-
-.project-coral {
-    background: linear-gradient(135deg, #FEB2B2 0%, #FC8181 100%) !important;
-    background-image: linear-gradient(135deg, #FEB2B2 0%, #FC8181 100%) !important;
-    border: 2px solid rgba(255, 255, 255, 0.3) !important;
-}
-
-.project-blue {
-    background: linear-gradient(135deg, #90CDF4 0%, #63B3ED 100%) !important;
-    background-image: linear-gradient(135deg, #90CDF4 0%, #63B3ED 100%) !important;
-    border: 2px solid rgba(255, 255, 255, 0.3) !important;
-}
-
-.project-orange {
-    background: linear-gradient(135deg, #FBD38D 0%, #F6AD55 100%) !important;
-    background-image: linear-gradient(135deg, #FBD38D 0%, #F6AD55 100%) !important;
-    border: 2px solid rgba(255, 255, 255, 0.3) !important;
-}
 
 /* Smooth hover effects */
 .card {
@@ -109,34 +77,10 @@ body {
 html {
     scroll-behavior: smooth;
 }
-/* Force all project card images to same size */
-#projects .card-img-top {
-    height: 200px;
-    object-fit: cover;
-    object-position: center top;
-    background-color: #f8f9fa;
-}
 
-/* For cards without images, add a placeholder area */
-#projects .card:not(:has(.card-img-top)) .card-body {
-    padding-top: 2rem;
-}
-/* Project carousel fixed height */
-#projects .carousel,
-#projects .carousel-inner,
-#projects .carousel-item {
-    min-height: 350px;
-}
 
-#projects .carousel-item img {
-    object-fit: cover;
-    object-position: center top;
-}
 
-/* Darken carousel arrows for visibility */
-#projects .carousel-control-prev-icon,
-#projects .carousel-control-next-icon {
-    background-color: rgba(0, 0, 0, 0.5);
-    border-radius: 50%;
-    padding: 20px;
-}
+
+
+
+
