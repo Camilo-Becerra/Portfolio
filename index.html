@@ -2,276 +2,326 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0 ">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="color-scheme" content="light">
 
     <title>Camilo Becerra - Software Developer</title>
 
+    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom Styles -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
+    <!-- ==================== NAVBAR ==================== -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary bg-opacity-90 sticky-top shadow-sm mb-5">
         <div class="container">
-            <a class="navbar-brand fw-bold fs-4 text-white" href="https://github.com/Camilo-Becerra">CB github</a>
+            <a class="navbar-brand fw-semibold fs-4 text-white" href="https://github.com/Camilo-Becerra">CB github</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
                 <ul class="navbar-nav">
-                    <li class="nav-item text-white"><a class="nav-link px-3 fw-semibold" href="#about">About</a></li>
-                    <li class="nav-item text-white"><a class="nav-link px-3 fw-semibold" href="#skills">Skills</a></li>
-                    <li class="nav-item text-white"><a class="nav-link px-3 fw-semibold" href="#projects">Projects</a></li>
-                    <li class="nav-item text-white"><a class="nav-link px-3 fw-semibold" href="#education">Education</a></li>
-                    <li class="nav-item text-white"><a class="nav-link px-3 fw-semibold" href="#contact">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link px-3 fw-semibold" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link px-3 fw-semibold" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link px-3 fw-semibold" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link px-3 fw-semibold" href="#education">Education</a></li>
+                    <li class="nav-item"><a class="nav-link px-3 fw-semibold" href="#contact">Contact</a></li>
                 </ul>
             </div>
         </div>
     </nav>
+    <!-- ==================== END NAVBAR ==================== -->
 
-    <section id="home" class="hero-gradient min-vh-75 d-flex align-items-center">
+
+    <!-- ==================== HOME ==================== -->
+    <section id="home" class="container min-vh-75 d-flex align-items-center">
         <div class="container text-center">
-            <h1 class="display-4 fw-bold text-dark mb-3">
+            <h1 class="fw-semibold text-dark mb-3">
                 Hi! I'm Camilo.<br>
                 <span class="text-primary">A Software Development Student.</span>
             </h1>
-            <p class="lead fs-4 text-secondary mb-3">
+            <p class=" fs-6 text-secondary mb-3">
                 I spent five years building furniture. Now I build software. Same approach: understand what people need, then make it work.
             </p>
         </div>
     </section>
+    <!-- ==================== END HOME ==================== -->
 
+
+    <!-- ==================== ABOUT ==================== -->
     <section id="about" class="py-4">
         <div class="container text-center">
-            <h2 class="display-4 fw-bold text-primary mb-3">About Me</h2>
-            <p class="lead fs-4 text-secondary mx-auto mb-3" style="max-width: 800px;">
+            <h2 class="fw-semibold text-primary mb-3">About Me</h2>
+            <p class=" fs-6 text-secondary mx-auto mb-3" style="max-width: 800px;">
                 My background in operations taught me how to break down problems and understand what users actually need. Now I am applying that to building web and mobile apps using a range of languages and frameworks, with a growing interest in cloud computing.
             </p>
-            <p class="lead fs-4 text-secondary mx-auto mb-3" style="max-width: 800px;">
+            <p class=" fs-6 text-secondary mx-auto mb-3" style="max-width: 800px;">
                 Skilled at translating requirements into clear solutions and collaborating across technical and non-technical teams.
             </p>
         </div>
     </section>
+    <!-- ==================== END ABOUT ==================== -->
 
-    <section id="skills" class="py-5 bg-light">
+
+    <!-- ==================== SKILLS ==================== -->
+    <section id="skills" class="container py-5 shadow-sm">
         <div class="container">
-            <h2 class="display-4 fw-bold text-center text-primary mb-5">Technical Skills</h2>
+            <h2 class="fw-semibold text-center text-primary mb-3">Technical Skills</h2>
             <div class="row g-4">
-                <div class="col-md-6 col-lg-4">
-                    <div class="card h-100 shadow-sm border-0">
-                        <div class="card-body">                            
-                            <h3 class="h5 fw-bold mb-3">Programming Languages</h3>
-                            <div class="d-flex flex-wrap gap-2">
-                                <span class="badge bg-primary-subtle text-primary px-3 py-2">C#</span>
-                                <span class="badge bg-primary-subtle text-primary px-3 py-2">Java</span>
-                                <span class="badge bg-primary-subtle text-primary px-3 py-2">JavaScript</span>
-                                <span class="badge bg-primary-subtle text-primary px-3 py-2">PHP</span>
-                                <span class="badge bg-primary-subtle text-primary px-3 py-2">HTML</span>
-                                <span class="badge bg-primary-subtle text-primary px-3 py-2">CSS</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
 
+                <!-- Skills Card 1: Programming Languages -->
                 <div class="col-md-6 col-lg-4">
-                    <div class="card h-100 shadow-sm border-0">
-                        <div class="card-body p-4">
-                            <h3 class="h5 fw-bold mb-3">Frameworks & Tools</h3>
-                            <div class="d-flex flex-wrap gap-2">
-                                <span class="badge bg-primary-subtle text-primary px-3 py-2">React</span>
-                                <span class="badge bg-primary-subtle text-primary px-3 py-2">React Native</span>
-                                <span class="badge bg-primary-subtle text-primary px-3 py-2">ASP.NET Core</span>
-                                <span class="badge bg-primary-subtle text-primary px-3 py-2">Bootstrap</span>
-                                <span class="badge bg-primary-subtle text-primary px-3 py-2">Visual Studio</span>
-                                <span class="badge bg-primary-subtle text-primary px-3 py-2">VS Code</span>
-                                <span class="badge bg-primary-subtle text-primary px-3 py-2">IntelliJ</span>
-                            </div>
+                    <div class="card h-100 border-0 shadow-lg p-4">
+                        <h3 class="h6 fw-semibold mb-3">Programming Languages</h3>
+                        <div class="d-flex flex-wrap gap-2">
+                            <span class="fw-semibold text-primary fs-7">C#</span>
+                            <span class="fw-semibold text-primary fs-7">Java</span>
+                            <span class="fw-semibold text-primary fs-7">JavaScript</span>
+                            <span class="fw-semibold text-primary fs-7">PHP</span>
+                            <span class="fw-semibold text-primary fs-7">HTML</span>
+                            <span class="fw-semibold text-primary fs-7">CSS</span>
                         </div>
                     </div>
                 </div>
+                <!-- End Skills Card 1 -->
 
+                <!-- Skills Card 2: Frameworks & Tools -->
                 <div class="col-md-6 col-lg-4">
-                    <div class="card h-100 shadow-sm border-0">
-                        <div class="card-body p-4">
-                            <h3 class="h5 fw-bold mb-3">Database & Testing</h3>
-                            <div class="d-flex flex-wrap gap-2">
-                                <span class="badge bg-primary-subtle text-primary px-3 py-2">SQL</span>
-                                <span class="badge bg-primary-subtle text-primary px-3 py-2">SQL Server</span>
-                                <span class="badge bg-primary-subtle text-primary px-3 py-2">JUnit</span>
-                                <span class="badge bg-primary-subtle text-primary px-3 py-2">Katalon</span>
-                                <span class="badge bg-primary-subtle text-primary px-3 py-2">GitHub</span>
-                                <span class="badge bg-primary-subtle text-primary px-3 py-2">Git</span>
-                            </div>
+                    <div class="card h-100 border-0 shadow-lg p-4">
+                        <h3 class="h6 fw-semibold mb-3">Frameworks &amp; Tools</h3>
+                        <div class="d-flex flex-wrap gap-2">
+                            <span class="fw-semibold text-primary fs-7">React</span>
+                            <span class="fw-semibold text-primary fs-7">React Native</span>
+                            <span class="fw-semibold text-primary fs-7">ASP.NET Core</span>
+                            <span class="fw-semibold text-primary fs-7">Bootstrap</span>
+                            <span class="fw-semibold text-primary fs-7">Visual Studio</span>
+                            <span class="fw-semibold text-primary fs-7">VS Code</span>
+                            <span class="fw-semibold text-primary fs-7">IntelliJ</span>
                         </div>
                     </div>
                 </div>
+                <!-- End Skills Card 2 -->
+
+                <!-- Skills Card 3: Database & Testing -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 border-0 shadow-lg p-4">
+                        <h3 class="h6 fw-semibold mb-3">Database &amp; Testing</h3>
+                        <div class="d-flex flex-wrap gap-2">
+                            <span class="fw-semibold text-primary fs-7">SQL</span>
+                            <span class="fw-semibold text-primary fs-7">SQL Server</span>
+                            <span class="fw-semibold text-primary fs-7">JUnit</span>
+                            <span class="fw-semibold text-primary fs-7">Katalon</span>
+                            <span class="fw-semibold text-primary fs-7">GitHub</span>
+                            <span class="fw-semibold text-primary fs-7">Git</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Skills Card 3 -->
+
             </div>
         </div>
     </section>
+    <!-- ==================== END SKILLS ==================== -->
 
-    <section id="projects" class="py-5">
-        <div class="container" style="max-width: 80%;">
-            <h2 class="display-4 fw-bold text-center text-primary mb-5">Projects</h2>
 
-            <div class="card border-0 shadow-lg mb-5 overflow-hidden">
-                <div class="row g-0 align-items-center">
-                    <div class="col-md-6">
-                        <img src="https://raw.githubusercontent.com/Camilo-Becerra/FurnitureShop/main/furniture1.png" class="img-fluid p-3" alt="Wood Shop Customer Managing System Screenshot">
-                    </div>
-                    <div class="col-md-6">
-                        <div class="card-body p-4">
-                            <small class="text-uppercase fw-bold text-warning d-block mb-2">PERSONAL PROJECT</small>
-                            <h3 class="h5 fw-bold mb-3">Wood Shop Customer Managing System</h3>
-                            <p class="card-text mb-4">
-                                Customer management system for a custom furniture business. Features dynamic pricing calculator with multi-variable inputs (wood, dimensions, stain, finish), work order tracking, and dashboard.
-                            </p>
-                            <p class="text-muted mb-4">
-                                <i class="fas fa-cloud me-2"></i>Deployed to Azure (App Service + SQL Database)
-                            </p>
-                            <div class="d-flex flex-wrap gap-2 mb-4">
-                                <span class="badge bg-primary text-white px-3 py-2">ASP.NET Core</span>
-                                <span class="badge bg-primary text-white px-3 py-2">C#</span>
-                                <span class="badge bg-primary text-white px-3 py-2">Entity Framework</span>
-                                <span class="badge bg-primary text-white px-3 py-2">Azure</span>
-                            </div>
-                            <a href="https://github.com/Camilo-Becerra/FurnitureShop" target="_blank" class="btn btn-outline-primary">
-                                <i class="fab fa-github me-1"></i> View Code
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card border-0 shadow-lg mb-5 overflow-hidden">
-                <div class="row g-0 flex-md-row-reverse align-items-center">
-                    <div class="col-md-6">
-                        <img src="https://raw.githubusercontent.com/Camilo-Becerra/Dr-Who/main/drwho.png" class="img-fluid" alt="Doctor Who Database Screenshot">
-                    </div>
-                    <div class="col-md-6">
-                        <div class="card-body p-5">
-                            <small class="text-uppercase fw-bold text-muted d-block mb-2">DATABASE APP</small>
-                            <h3 class="h3 fw-bold mb-3">Doctor Who Database</h3>
-                            <p class="card-text mb-4">
-                                Windows Forms application connecting to SQL Server to manage relational data across three interconnected tables with dynamic GUI controls.
-                            </p>
-                            <div class="d-flex flex-wrap gap-2 mb-4">
-                                <span class="badge bg-primary text-white px-3 py-2">C#</span>
-                                <span class="badge bg-primary text-white px-3 py-2">SQL Server</span>
-                                <span class="badge bg-primary text-white px-3 py-2">Windows Forms</span>
-                            </div>
-                            <a href="https://github.com/Camilo-Becerra/Dr-Who" target="_blank" class="btn btn-outline-primary">
-                                <i class="fab fa-github me-1"></i> View Code
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card border-0 shadow-lg mb-5 overflow-hidden">
-                <div class="row g-0 align-items-center">
-                    <div class="col-md-6">
-                        <img src="https://raw.githubusercontent.com/Camilo-Becerra/BirdsOfOntario/main/birds.png" class="img-fluid p-3" alt="Birds of Ontario Screenshot">
-                    </div>
-                    <div class="col-md-6">
-                        <div class="card-body p-5">
-                            <small class="text-uppercase fw-bold text-muted d-block mb-2">MOBILE APP</small>
-                            <h3 class="h3 fw-bold mb-3">Birds of Ontario</h3>
-                            <p class="card-text mb-4">
-                                React Native mobile app that displays real bird sightings across Ontario using the iNaturalist API. Features search, random discovery, and a catalog of the 50 most common species.
-                            </p>
-                            <div class="d-flex flex-wrap gap-2 mb-4">
-                                <span class="badge bg-primary text-white px-3 py-2">React Native</span>
-                                <span class="badge bg-primary text-white px-3 py-2">Expo</span>
-                                <span class="badge bg-primary text-white px-3 py-2">REST API</span>
-                            </div>
-                            <a href="https://github.com/Camilo-Becerra/BirdsOfOntario" target="_blank" class="btn btn-outline-primary">
-                                <i class="fab fa-github me-1"></i> View Code
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="education" class="py-5 bg-light">
+    <!-- ==================== PROJECTS ==================== -->
+<section id="projects" class="container py-5 shadow-sm">
         <div class="container">
-            <h2 class="display-4 fw-bold text-center text-primary mb-5">Education</h2>
+            <h2 class="fw-semibold text-center text-primary mb-3">Projects</h2>
+            <div class="row g-4">
+
+                <!-- Project Card 1: Wood Shop -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 border-0 shadow-lg">
+                        <div class="card-body d-flex flex-column p-4">
+                            <small class="text-uppercase fw-semibold text-warning mb-2">Personal Project</small>
+                            <h3 class="h5 fw-semibold mb-3">Wood Shop Customer Managing System</h3>
+                            <p class="card-text mb-3">
+                                Customer management system for a custom furniture business. Includes dynamic pricing with multiple variables, work order tracking, and dashboard.
+                            </p>
+                            <p class="text-muted small mb-3">
+                                <i class="fas fa-cloud me-1"></i> Azure (App Service + SQL)
+                            </p>
+                            <div class="d-flex flex-wrap gap-2 mb-3">
+                                <span class="badge bg-primary text-white px-2 py-1">ASP.NET Core</span>
+                                <span class="badge bg-primary text-white px-2 py-1">C#</span>
+                                <span class="badge bg-primary text-white px-2 py-1">Entity Framework</span>
+                                <span class="badge bg-primary text-white px-2 py-1">Azure</span>
+                            </div>
+                            <a href="https://github.com/Camilo-Becerra/FurnitureShop" target="_blank" class="btn btn-outline-primary btn-sm mt-auto">
+                                <i class="fab fa-github me-1"></i> View Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Project Card 1 -->
+
+                <!-- Project Card 2: Doctor Who -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 border-0 shadow-lg">
+                        <div class="card-body d-flex flex-column p-4">
+                            <small class="text-uppercase fw-semibold text-info mb-2">Academic Project</small>
+                            <small class="text-uppercase fw-semibold text-muted mb-2">Database App</small>
+                            <h3 class="h5 fw-semibold mb-3">Doctor Who Database</h3>
+                            <p class="card-text mb-3">
+                                Windows Forms app connected to SQL Server managing relational data across three tables with dynamic UI controls.
+                            </p>
+                            <div class="d-flex flex-wrap gap-2 mb-3">
+                                <span class="badge bg-primary text-white px-2 py-1">C#</span>
+                                <span class="badge bg-primary text-white px-2 py-1">SQL Server</span>
+                                <span class="badge bg-primary text-white px-2 py-1">Windows Forms</span>
+                            </div>
+                            <a href="https://github.com/Camilo-Becerra/Dr-Who" target="_blank" class="btn btn-outline-primary btn-sm mt-auto">
+                                <i class="fab fa-github me-1"></i> View Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Project Card 2 -->
+
+                <!-- Project Card 3: Birds of Ontario -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 border-0 shadow-lg">
+                        <div class="card-body d-flex flex-column p-4">
+                            <small class="text-uppercase fw-semibold text-info mb-2">Academic Project</small>
+
+                            <small class="text-uppercase fw-semibold text-muted mb-2">Mobile App</small>
+                            <h3 class="h5 fw-semibold mb-3">Birds of Ontario</h3>
+                            <p class="card-text mb-3">
+                                React Native app using the iNaturalist API to display real-time bird sightings across Ontario with search and discovery features.
+                            </p>
+                            <div class="d-flex flex-wrap gap-2 mb-3">
+                                <span class="badge bg-primary text-white px-2 py-1">React Native</span>
+                                <span class="badge bg-primary text-white px-2 py-1">Expo</span>
+                                <span class="badge bg-primary text-white px-2 py-1">REST API</span>
+                            </div>
+                            <a href="https://github.com/Camilo-Becerra/BirdsOfOntario" target="_blank" class="btn btn-outline-primary btn-sm mt-auto">
+                                <i class="fab fa-github me-1"></i> View Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Project Card 3 -->
+
+            </div>
+        </div>
+    </section>
+    <!-- ==================== END PROJECTS ==================== -->
+
+
+    <!-- ==================== EDUCATION ==================== -->
+<!-- ==================== EDUCATION ==================== -->
+<section id="education" class="container py-5 shadow-sm">        <div class="container">
+            <h2 class="fw-semibold text-center text-primary mb-5">Education</h2>
             <div class="row justify-content-center">
                 <div class="col-lg-8">
-                    <div class="card mb-4 border-0 border-start border-primary border-4 shadow-sm">
+
+                    <!-- Education Card 1: Mohawk College -->
+                    <div class="card mb-4 border-0">
                         <div class="card-body p-4">
                             <div class="d-flex justify-content-between align-items-start flex-wrap mb-2">
-                                <h3 class="h5 fw-bold mb-2">Computer Systems Technology - Software Development</h3>
+                                <h3 class="h5 fw-semibold mb-2">Computer Systems Technology - Software Development</h3>
                                 <span class="badge bg-primary px-3 py-2">Dean's Honour Student</span>
                             </div>
                             <p class="text-primary fw-semibold mb-1">Mohawk College</p>
                             <p class="text-muted mb-3">Hamilton, ON • Sept 2024 to Present</p>
                             <p class="mb-0">
-                                <strong>Relevant Coursework:</strong> Web Application Development, Data Structures, Software Quality and Testing, Project Management, UI/UX Design, Mobile Web Application, Database Theory
+                                Currently pursuing a diploma in Computer Systems Technology with a focus on Software Development. Coursework includes programming languages, software design, database management, and cloud computing. Expected graduation in 2027.
                             </p>
                         </div>
                     </div>
+                    <!-- End Education Card 1 -->
 
-                    <div class="card border-0 border-start border-primary border-4 shadow-sm">
+                    <!-- Education Card 2: Concordia -->
+                    <div class="card border-0">
                         <div class="card-body p-4">
-                            <h3 class="h5 fw-bold mb-2">Bachelor of Science in Biology</h3>
+                            <h3 class="h5 fw-semibold mb-2">Bachelor of Science in Biology</h3>
                             <p class="text-primary fw-semibold mb-1">Concordia University</p>
                             <p class="text-muted mb-0">Montreal, QC • Class of 2014</p>
                         </div>
                     </div>
+                    <!-- End Education Card 2 -->
+
                 </div>
             </div>
         </div>
     </section>
+    <!-- ==================== END EDUCATION ==================== -->
 
+
+    <!-- ==================== CONTACT ==================== -->
     <section id="contact" class="py-5">
         <div class="container text-center">
-            <h2 class="display-4 fw-bold text-primary mb-5">Let's Connect</h2>
+            <h2 class="fw-semibold text-primary mb-5">Let's Connect</h2>
             <div class="row justify-content-center">
                 <div class="col-lg-6">
+
+                    <!-- Contact Card -->
                     <div class="card border-0 shadow-sm mb-4 text-start">
                         <div class="card-body p-4">
+
+                            <!-- Email -->
                             <div class="d-flex align-items-center mb-3 pb-3 border-bottom">
                                 <i class="fas fa-envelope text-primary fa-lg me-3"></i>
                                 <a href="mailto:camilo.becerra-figueredo@mohawkcollege.ca" class="text-decoration-none text-dark">camilo.becerra-figueredo@mohawkcollege.ca</a>
                             </div>
+
+                            <!-- Phone -->
                             <div class="d-flex align-items-center mb-3 pb-3 border-bottom">
                                 <i class="fas fa-phone text-primary fa-lg me-3"></i>
                                 <a href="tel:5142935842" class="text-decoration-none text-dark">514.293.5842</a>
                             </div>
+
+                            <!-- Location -->
                             <div class="d-flex align-items-center mb-3 pb-3 border-bottom">
                                 <i class="fas fa-map-marker-alt text-primary fa-lg me-3"></i>
                                 <span>Hamilton, ON</span>
                             </div>
+
+                            <!-- GitHub -->
                             <div class="d-flex align-items-center mb-3 pb-3 border-bottom">
                                 <i class="fab fa-github text-primary fa-lg me-3"></i>
                                 <a href="https://github.com/Camilo-Becerra" class="text-decoration-none text-dark" target="_blank">GitHub Profile</a>
                             </div>
+
+                            <!-- LinkedIn -->
                             <div class="d-flex align-items-center">
                                 <i class="fab fa-linkedin text-primary fa-lg me-3"></i>
                                 <a href="https://www.linkedin.com/in/camilo-becerra-41a361342/" class="text-decoration-none text-dark" target="_blank">LinkedIn Profile</a>
                             </div>
+
                         </div>
                     </div>
+                    <!-- End Contact Card -->
 
+                    <!-- Resume Download Button -->
                     <a href="resume.pdf" class="btn btn-primary btn-lg px-5 py-3 rounded-pill shadow" download>
                         <i class="fas fa-download me-2"></i> Download Resume
                     </a>
+
                 </div>
             </div>
         </div>
     </section>
+    <!-- ==================== END CONTACT ==================== -->
 
+
+    <!-- ==================== FOOTER ==================== -->
     <footer class="bg-dark text-white-50 text-center py-4">
         <div class="container">
-            <p class="mb-0">&copy; 2026 Camilo Becerra. Built with Bootstrap & passion.</p>
+            <p class="mb-0">&copy; 2026 Camilo Becerra. Built with Bootstrap &amp; passion.</p>
         </div>
     </footer>
+    <!-- ==================== END FOOTER ==================== -->
 
+
+    <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
     <script>
@@ -288,6 +338,6 @@
             });
         });
     </script>
+
 </body>
 </html>
-```
