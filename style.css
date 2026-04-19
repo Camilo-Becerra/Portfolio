@@ -1,127 +1,85 @@
-/* Base body styling using the Inter font family with system fallbacks */
+/* Import Inter font via the body font stack below */
 body {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
     font-size: 14px;
 }
 
-/* Custom color palette exposed as CSS variables so any theme change happens in one place */
+/* Custom color scheme exposed as CSS variables */
 :root {
     --primary-color: #2C7A7B;
     --gradient-start: #C3D5D0;
     --gradient-mid: #E8D5C4;
     --gradient-end: #F4E4D7;
-    --project-image-height-desktop: 360px;
-    --project-image-height-mobile: 240px;
-    --project-image-background: #212529;
 }
 
-/* Override the Bootstrap text-primary utility so it uses the custom primary color */
+/* Override Bootstrap primary color utility */
 .text-primary {
     color: var(--primary-color) !important;
 }
 
-/* Override the Bootstrap bg-primary utility */
+/* Override Bootstrap primary background utility */
 .bg-primary {
     background-color: var(--primary-color) !important;
 }
 
-/* Override the Bootstrap btn-primary default background and border */
+/* Override Bootstrap primary button default state */
 .btn-primary {
     background-color: var(--primary-color);
     border-color: var(--primary-color);
 }
 
-/* Override the Bootstrap btn-primary hover state with a slightly darker shade */
+/* Override Bootstrap primary button hover state with a darker shade */
 .btn-primary:hover {
     background-color: #245e5f;
     border-color: #245e5f;
 }
 
-/* Override the Bootstrap border-primary utility */
+/* Override Bootstrap primary border utility */
 .border-primary {
     border-color: var(--primary-color) !important;
 }
 
-/* Override the Bootstrap bg-primary-subtle utility used on the skills badges */
+/* Override Bootstrap subtle primary background utility */
 .bg-primary-subtle {
     background-color: #E6FFFA !important;
 }
 
-/* Navbar backdrop blur so content scrolling underneath it stays slightly visible */
+/* Navbar background blur effect */
 .navbar {
     backdrop-filter: blur(10px);
 }
 
-/* Force the brand link to render in white and bold regardless of hover state */
+/* Force the brand link to white and bold */
 .navbar-brand {
     color: white !important;
     font-weight: 800;
 }
 
-/* Force nav links to render in white with a medium weight */
+/* Force nav links to white and medium weight */
 .nav-link {
     color: white !important;
     font-weight: 500;
 }
 
-/* Nav link hover state: light translucent pill background behind the text */
+/* Nav link hover background pill */
 .nav-link:hover {
     background-color: rgba(255, 255, 255, 0.2);
     border-radius: 20px;
     color: white !important;
 }
 
-/* Generic card transition for lift and shadow changes on hover */
+/* Generic card hover transition */
 .card {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Generic card hover state used across the whole portfolio */
+/* Generic card hover lift and shadow */
 .card:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15) !important;
 }
 
-/* Enable smooth scrolling for the whole document so anchor jumps animate */
+/* Smooth scroll for in-page anchors */
 html {
     scroll-behavior: smooth;
-}
-
-/* Project card image container: fixed height so the card drives the image size, not the other way around */
-.project-card-image {
-    height: var(--project-image-height-desktop);
-    overflow: hidden;
-    background-color: var(--project-image-background);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-/* Project card image: contain inside the fixed-height container so the entire screenshot is visible without distortion */
-.project-card-image img {
-    max-width: 100%;
-    max-height: 100%;
-    width: auto;
-    height: auto;
-    object-fit: contain;
-    display: block;
-}
-
-/* Mobile image container: slightly shorter when the two columns stack vertically */
-@media (max-width: 767.98px) {
-    .project-card-image {
-        height: var(--project-image-height-mobile);
-    }
-}
-
-/* Project card link wrapper: keep cursor as pointer and never show underline on hover */
-a.d-block:has(.card) {
-    cursor: pointer;
-}
-
-/* Protect the project card text from being restyled by the anchor wrapper on hover */
-a.text-decoration-none:hover .card-text,
-a.text-decoration-none:hover h3,
-a.text-decoration-none:hover small {
-    text-decoration: none;
 }
